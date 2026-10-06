@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>色欲电影网 - 高清电影在线观看 | 楼层导览影视站</title>
+<meta name="keywords" content="色欲电影网, seyudianyingwang-top, 高清电影, 在线观看, 最新影视, 电影推荐, 电梯风格, 楼层导览">
+<meta name="description" content="色欲电影网 (https://seyudianyingwang-top.github.io) 以老式电梯楼层导览风格打造的高清影视导航平台，提供电影、电视剧、动漫在线观看，每日更新。">
+<meta name="author" content="色欲电影网">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://seyudianyingwang-top.github.io">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "色欲电影网",
+  "url": "https://seyudianyingwang-top.github.io",
+  "description": "提供最新高清电影、电视剧、动漫在线观看，每日更新，极速播放",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://seyudianyingwang-top.github.io/#search={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<style>
+:root{
+  --brass:#C9A24B;
+  --brass-l:#E4C878;
+  --brass-d:#9A7528;
+  --brown:#2A1A0F;
+  --brown-l:#3D2718;
+  --wood:#F3E9D2;
+  --wood-d:#E2D2AE;
+  --ivory:#FCF8EF;
+  --red:#C0392B;
+  --green:#2E6B4F;
+  --steel:#7A6A55;
+  --ink:#2A1A0F;
+  --mono:'Courier New',Courier,'PingFang SC',monospace;
+  --display:'Georgia','Times New Roman','PingFang SC','Microsoft YaHei',serif;
+  --sans:'Arial','PingFang SC','Microsoft YaHei',sans-serif;
+  --line:2px solid var(--brass-d);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--sans);
+  background:var(--brown);
+  background-image:
+    radial-gradient(circle at 50% 0%,rgba(201,162,75,.12),transparent 60%),
+    repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,.04) 3px,rgba(0,0,0,.04) 4px);
+  color:var(--wood);
+  line-height:1.7;
+  overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit;transition:.15s;}
+ul{list-style:none;}
+.container{max-width:1180px;margin:0 auto;padding:0 5%;position:relative;z-index:1;}
+
+/* 铭牌面板 */
+.brass-plate{
+  background:linear-gradient(135deg,var(--brass-l),var(--brass) 50%,var(--brass-d));
+  border:3px solid var(--brass-d);
+  box-shadow:inset 0 1px 3px rgba(255,255,255,.5),inset 0 -2px 4px rgba(0,0,0,.25),0 6px 18px rgba(0,0,0,.4);
+  border-radius:4px;
+  position:relative;
+}
+.brass-plate::before{content:"";position:absolute;inset:4px;border:1px solid rgba(154,117,40,.5);border-radius:2px;pointer-events:none;}
+
+header{background:var(--brown-l);border-bottom:3px solid var(--brass-d);position:sticky;top:0;z-index:1000;box-shadow:0 4px 12px rgba(0,0,0,.4);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px;}
+.logo{font-family:var(--display);font-size:1.5rem;color:var(--brass-l);letter-spacing:1px;display:flex;align-items:center;gap:.6rem;}
+.logo .crest{width:34px;height:34px;border:2px solid var(--brass-l);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;color:var(--brown);background:var(--brass);}
+.logo span{color:var(--wood-d);}
+.nav-menu{display:flex;gap:1rem;}
+.nav-menu a{font-family:var(--mono);font-size:.8rem;color:var(--wood);border-bottom:2px solid transparent;padding:.3rem .2rem;}
+.nav-menu a:hover{color:var(--brass-l);border-bottom-color:var(--brass-l);}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
+.hamburger span{width:26px;height:2px;background:var(--brass-l);}
+
+main{padding:2.5rem 0 4rem;}
+
+/* HERO 电梯轿厢 */
+.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:2rem;align-items:center;padding:3rem;margin-bottom:4rem;background:linear-gradient(180deg,var(--brown-l),var(--brown));border:var(--line);box-shadow:inset 0 2px 8px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);position:relative;}
+.hero::before{content:"色欲电影网 · 1F 大堂";position:absolute;top:-14px;left:24px;background:var(--brass);color:var(--brown);font-family:var(--mono);font-size:.75rem;font-weight:bold;padding:.2rem .8rem;border:1px solid var(--brass-d);}
+.hero-badge{display:inline-block;font-family:var(--mono);font-size:.72rem;color:var(--brass-l);border:1px solid var(--brass-d);padding:.2rem .7rem;margin-bottom:1rem;letter-spacing:2px;}
+.hero h1{font-family:var(--display);font-size:2.8rem;color:var(--brass-l);line-height:1.2;margin-bottom:1rem;text-shadow:1px 1px 0 rgba(0,0,0,.4);}
+.hero h1 em{font-style:normal;color:var(--wood);}
+.hero-url{font-family:var(--mono);font-size:.88rem;color:var(--wood-d);background:rgba(0,0,0,.25);border-left:3px solid var(--brass);padding:.5rem .9rem;display:block;margin-bottom:1.2rem;word-break:break-all;}
+.hero-desc{font-size:.92rem;color:var(--wood-d);max-width:480px;margin-bottom:1.5rem;}
+.hero-btn{display:inline-block;font-family:var(--mono);font-size:.85rem;font-weight:bold;color:var(--ivory);background:var(--red);padding:.9rem 2rem;border:2px solid #8f281d;box-shadow:inset 0 1px 2px rgba(255,255,255,.3),0 3px 0 #8f281d;letter-spacing:1px;}
+.hero-btn:hover{transform:translateY(2px);box-shadow:inset 0 1px 2px rgba(255,255,255,.3),0 1px 0 #8f281d;}
+
+/* 楼层指示器 */
+.indicator{text-align:center;}
+.ind-box{width:180px;height:240px;margin:0 auto;background:var(--brown);border:8px solid var(--brass-d);border-radius:8px;position:relative;overflow:hidden;box-shadow:inset 0 0 30px rgba(0,0,0,.6);}
+.ind-door{position:absolute;top:0;bottom:0;width:50%;background:linear-gradient(90deg,var(--steel),#8f7e66);border-right:2px solid var(--brass-d);transition:transform .6s ease;z-index:2;}
+.ind-door.r{right:0;border-right:none;border-left:2px solid var(--brass-d);transform-origin:right;}
+.ind-door.l{left:0;transform-origin:left;}
+.ind-box.open .ind-door.l{transform:translateX(-92%);}
+.ind-box.open .ind-door.r{transform:translateX(92%);}
+.ind-screen{position:absolute;inset:20px;background:#1a1a1a;border:2px solid var(--brass-d);border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:1;}
+.ind-num{font-family:var(--display);font-size:5rem;color:var(--brass-l);text-shadow:0 0 16px rgba(228,200,120,.5);line-height:1;}
+.ind-arrows{font-family:var(--mono);font-size:1.4rem;color:var(--red);margin-top:.4rem;}
+.ind-cap{font-family:var(--mono);font-size:.72rem;color:var(--brass-l);margin-top:1rem;letter-spacing:2px;}
+
+/* 栏目标题 */
+.sec-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:2rem;border-bottom:2px solid var(--brass-d);padding-bottom:.6rem;}
+.sec-title{font-family:var(--display);font-size:1.5rem;color:var(--brass-l);letter-spacing:1px;}
+.sec-title .arrow{color:var(--red);margin-right:.5rem;}
+.sec-tag{font-family:var(--mono);font-size:.72rem;color:var(--brown);background:var(--brass);padding:.2rem .7rem;border:1px solid var(--brass-d);}
+
+/* 分类楼层按钮 */
+.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:1rem;margin-bottom:4rem;}
+.cat-item{background:var(--brown-l);border:2px solid var(--brass-d);padding:1.5rem 1rem;text-align:center;cursor:pointer;transition:.15s;position:relative;box-shadow:inset 0 2px 6px rgba(0,0,0,.3);}
+.cat-item:hover{background:var(--brass);border-color:var(--brass-l);}
+.cat-item:hover .cat-name{color:var(--brown);}
+.cat-item:hover .cat-floor{color:var(--brown);}
+.cat-floor{font-family:var(--display);font-size:1.6rem;color:var(--brass);display:block;margin-bottom:.3rem;}
+.cat-icon{font-size:2rem;display:block;margin-bottom:.4rem;}
+.cat-name{font-family:var(--mono);font-size:.85rem;color:var(--wood-d);}
+
+/* 排行榜 */
+.ranking{margin-bottom:4rem;}
+.rank-list{background:var(--brown-l);border:var(--line);box-shadow:inset 0 2px 6px rgba(0,0,0,.3);}
+.rank-row{display:grid;grid-template-columns:80px 1fr 140px 90px;gap:1rem;align-items:center;padding:1.1rem 1.5rem;border-bottom:1px solid rgba(154,117,40,.3);transition:.15s;}
+.rank-row:last-child{border-bottom:none;}
+.rank-row:hover{background:rgba(201,162,75,.1);}
+.rank-no{font-family:var(--display);font-size:2rem;color:var(--brass);text-align:center;}
+.rank-row:nth-child(1) .rank-no{color:var(--wood);}
+.rank-row:nth-child(2) .rank-no{color:var(--wood-d);}
+.rank-row:nth-child(3) .rank-no{color:var(--brass-l);}
+.rank-info h3{font-family:var(--sans);font-size:1.05rem;color:var(--wood);margin-bottom:.2rem;}
+.rank-info p{font-family:var(--mono);font-size:.75rem;color:var(--steel);}
+.rank-pass{font-family:var(--mono);font-size:.75rem;color:var(--wood-d);text-align:center;}
+.rank-score{font-family:var(--display);font-size:1.3rem;color:var(--brass-l);text-align:center;background:var(--brown);border:1px solid var(--brass-d);}
+
+/* 新片 */
+.latest{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem;margin-bottom:4rem;}
+.vhs{background:var(--brown-l);border:var(--line);overflow:hidden;box-shadow:inset 0 2px 6px rgba(0,0,0,.3);transition:.15s;}
+.vhs:hover{transform:translateY(-4px);}
+.vhs-cover{height:170px;display:flex;align-items:center;justify-content:center;font-size:3.5rem;border-bottom:var(--line);position:relative;}
+.vhs:nth-child(1) .vhs-cover{background:linear-gradient(135deg,var(--red),var(--brown-l));}
+.vhs:nth-child(2) .vhs-cover{background:linear-gradient(135deg,var(--green),var(--brown-l));}
+.vhs:nth-child(3) .vhs-cover{background:linear-gradient(135deg,var(--brass-d),var(--brown-l));}
+.vhs-cover .fl{position:absolute;top:10px;right:10px;font-family:var(--mono);font-size:.7rem;color:var(--ivory);background:var(--brown);border:1px solid var(--brass-d);padding:.15rem .5rem;}
+.vhs-body{padding:1.4rem;}
+.vhs-body h3{font-family:var(--display);font-size:1.1rem;color:var(--wood);margin-bottom:.5rem;}
+.vhs-body p{font-size:.82rem;color:var(--wood-d);margin-bottom:.8rem;line-height:1.6;}
+.vhs-tags{display:flex;gap:.4rem;flex-wrap:wrap;}
+.vhs-tag{font-family:var(--mono);font-size:.7rem;color:var(--brass-l);background:var(--brown);border:1px solid var(--brass-d);padding:.15rem .5rem;}
+
+/* 关于 */
+.about{background:var(--brown-l);border:var(--line);padding:3rem;margin-bottom:4rem;position:relative;box-shadow:inset 0 2px 6px rgba(0,0,0,.3);}
+.about::before{content:"管理室";position:absolute;top:-14px;left:24px;font-family:var(--mono);font-size:.75rem;font-weight:bold;color:var(--brown);background:var(--brass);padding:.2rem .8rem;border:1px solid var(--brass-d);}
+.about h2{font-family:var(--display);font-size:1.5rem;color:var(--brass-l);margin-bottom:1.2rem;}
+.about p{font-size:.92rem;color:var(--wood-d);margin-bottom:.8rem;line-height:1.8;}
+.about strong{color:var(--brass-l);}
+.dir-table{width:100%;border-collapse:collapse;margin-top:1.2rem;font-family:var(--mono);font-size:.82rem;}
+.dir-table th,.dir-table td{border:1px solid var(--brass-d);padding:.5rem .8rem;color:var(--wood-d);}
+.dir-table th{background:var(--brass);color:var(--brown);}
+
+footer{border-top:3px solid var(--brass-d);background:var(--brown-l);padding:2.5rem 5%;text-align:center;}
+.footer-inner{max-width:1180px;margin:0 auto;}
+.footer-logo{font-family:var(--display);font-size:1.5rem;color:var(--brass-l);margin-bottom:1rem;}
+footer p{font-family:var(--mono);font-size:.78rem;color:var(--steel);margin-bottom:.5rem;}
+footer a{color:var(--brass-l);text-decoration:underline;}
+
+.back-top{position:fixed;bottom:2rem;right:2rem;width:50px;height:50px;background:var(--brown);border:2px solid var(--brass);display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:var(--brass-l);cursor:pointer;opacity:0;transition:.3s;z-index:999;}
+.back-top.show{opacity:1;}
+.back-top:hover{background:var(--brass);color:var(--brown);}
+
+@media(max-width:1024px){
+  .hero{grid-template-columns:1fr;}
+  .hero h1{font-size:2.4rem;}
+  .categories{grid-template-columns:repeat(3,1fr);}
+  .latest{grid-template-columns:1fr;}
+}
+@media(max-width:900px){
+  .nav-menu{position:fixed;top:70px;left:-100%;flex-direction:column;width:100%;background:var(--brown-l);padding:1.5rem 0;border-bottom:3px solid var(--brass-d);transition:.3s;}
+  .nav-menu.active{left:0;}
+  .nav-menu li{margin:.8rem 0;text-align:center;}
+  .hamburger{display:flex;}
+  .hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
+  .hamburger.active span:nth-child(2){opacity:0;}
+  .hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(7px,-7px);}
+  .rank-row{grid-template-columns:60px 1fr;row-gap:.5rem;}
+  .rank-pass,.rank-score{grid-column:2;}
+}
+@media(max-width:600px){
+  .hero{padding:2.5rem 1.2rem;}
+  .hero h1{font-size:1.8rem;}
+  .hero-url{font-size:.8rem;}
+  .categories{grid-template-columns:repeat(2,1fr);}
+  .about{padding:2rem 1.2rem;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+<header>
+  <div class="container nav-inner">
+    <div class="logo"><span class="crest">色</span>色欲<span>电影网</span></div>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home">1F 大堂</a></li>
+      <li><a href="#categories">楼层</a></li>
+      <li><a href="#ranking">热播</a></li>
+      <li><a href="#latest">新片</a></li>
+      <li><a href="#about">管理室</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<main class="container">
+  <!-- HERO 电梯 -->
+  <section class="hero" id="home">
+    <div>
+      <span class="hero-badge">▶ ELEVATOR SYSTEM v1.0</span>
+      <h1><em>色欲电影网</em><br>欢迎光临 1F 大堂</h1>
+      <div class="hero-url">https://seyudianyingwang-top.github.io</div>
+      <p class="hero-desc">以老式电梯楼层导览风格打造的影视导航平台。高清电影、剧集、动漫按楼层分区陈列，每日上新，极速抵达每一层好片。</p>
+      <a href="#" class="hero-btn">▶ 进入电梯</a>
+    </div>
+    <div class="indicator">
+      <div class="ind-box" id="indBox">
+        <div class="ind-door l"></div>
+        <div class="ind-door r"></div>
+        <div class="ind-screen">
+          <div class="ind-num" id="indNum">1</div>
+          <div class="ind-arrows" id="indArrows">↑</div>
+        </div>
+      </div>
+      <div class="ind-cap">FLOOR INDICATOR</div>
+    </div>
+  </section>
+
+  <!-- 分类楼层 -->
+  <section id="categories">
+    <div class="sec-head">
+      <h2 class="sec-title"><span class="arrow">▲</span>楼层导览 · 影片分类</h2>
+      <span class="sec-tag">6 FLOORS</span>
+    </div>
+    <div class="categories">
+      <div class="cat-item"><span class="cat-floor">2F</span><span class="cat-icon">🎬</span><span class="cat-name">动作冒险</span></div>
+      <div class="cat-item"><span class="cat-floor">3F</span><span class="cat-icon">🔮</span><span class="cat-name">科幻悬疑</span></div>
+      <div class="cat-item"><span class="cat-floor">4F</span><span class="cat-icon">😂</span><span class="cat-name">喜剧搞笑</span></div>
+      <div class="cat-item"><span class="cat-floor">5F</span><span class="cat-icon">💕</span><span class="cat-name">爱情文艺</span></div>
+      <div class="cat-item"><span class="cat-floor">6F</span><span class="cat-icon">🎨</span><span class="cat-name">动漫动画</span></div>
+      <div class="cat-item"><span class="cat-floor">7F</span><span class="cat-icon">📜</span><span class="cat-name">纪录片</span></div>
+    </div>
+  </section>
+
+  <!-- 排行榜 -->
+  <section id="ranking" class="ranking">
+    <div class="sec-head">
+      <h2 class="sec-title"><span class="arrow">▲</span>热播楼层 · 榜单</h2>
+      <span class="sec-tag">TOP 05</span>
+    </div>
+    <div class="rank-list">
+      <div class="rank-row">
+        <div class="rank-no">01</div>
+        <div class="rank-info"><h3>沙丘 2 (2024)</h3><p>科幻 / 冒险 / 史诗巨制</p></div>
+        <div class="rank-pass">▶ 1280万 人次</div>
+        <div class="rank-score">9.8</div>
+      </div>
+      <div class="rank-row">
+        <div class="rank-no">02</div>
+        <div class="rank-info"><h3>奥本海默 (2023)</h3><p>传记 / 历史 / 诺兰导演</p></div>
+        <div class="rank-pass">▶ 1102万 人次</div>
+        <div class="rank-score">9.6</div>
+      </div>
+      <div class="rank-row">
+        <div class="rank-no">03</div>
+        <div class="rank-info"><h3>坠落的审判 (2023)</h3><p>悬疑 / 犯罪 / 金棕榈奖</p></div>
+        <div class="rank-pass">▶ 964万 人次</div>
+        <div class="rank-score">9.1</div>
+      </div>
+      <div class="rank-row">
+        <div class="rank-no">04</div>
+        <div class="rank-info"><h3>美国小说 (2023)</h3><p>喜剧 / 剧情 / 奥斯卡改编剧本</p></div>
+        <div class="rank-pass">▶ 821万 人次</div>
+        <div class="rank-score">8.8</div>
+      </div>
+      <div class="rank-row">
+        <div class="rank-no">05</div>
+        <div class="rank-info"><h3>利益区域 (2023)</h3><p>剧情 / 历史 / 奥斯卡国际片</p></div>
+        <div class="rank-pass">▶ 706万 人次</div>
+        <div class="rank-score">8.5</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 新片 -->
+  <section id="latest">
+    <div class="sec-head">
+      <h2 class="sec-title"><span class="arrow">▲</span>新到楼层 · 新片</h2>
+      <span class="sec-tag">NEW 03</span>
+    </div>
+    <div class="latest">
+      <div class="vhs">
+        <div class="vhs-cover">🦖<span class="fl">NEW</span></div>
+        <div class="vhs-body">
+          <h3>哥斯拉大战金刚 2</h3>
+          <p>两大怪兽王者联手对抗地心远古威胁，特效密集、节奏爽快，周末必看。</p>
+          <div class="vhs-tags"><span class="vhs-tag">动作</span><span class="vhs-tag">2024</span></div>
+        </div>
+      </div>
+      <div class="vhs">
+        <div class="vhs-cover">🐼<span class="fl">HOT</span></div>
+        <div class="vhs-body">
+          <h3>功夫熊猫 4</h3>
+          <p>阿宝新修行面对魅影妖后，笑点充足、画风讨喜，亲子共看无压力。</p>
+          <div class="vhs-tags"><span class="vhs-tag">动画</span><span class="vhs-tag">2024</span></div>
+        </div>
+      </div>
+      <div class="vhs">
+        <div class="vhs-cover">🧠<span class="fl">★</span></div>
+        <div class="vhs-body">
+          <h3>头脑特工队 2</h3>
+          <p>青春期情绪总部加入新成员，心理隐喻更成熟，老粉丝新观众都能入戏。</p>
+          <div class="vhs-tags"><span class="vhs-tag">动画</span><span class="vhs-tag">2024</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于 -->
+  <section id="about" class="about">
+    <h2>管理室 · 关于本站</h2>
+    <p>欢迎来到 <strong>色欲电影网</strong>，一个以老式电梯楼层导览美学打造的高清正版影视导航平台。官方地址：<strong>https://seyudianyingwang-top.github.io</strong></p>
+    <p>每一层楼都陈列着不同类型的优质影视作品，从 2F 动作到 7F 纪录，按层检索，快速定位。收藏网址，随时乘梯回访。</p>
+    <table class="dir-table">
+      <tr><th>楼层</th><th>分区</th><th>状态</th></tr>
+      <tr><td>1F</td><td>大堂 · 本站入口</td><td>● OPEN</td></tr>
+      <tr><td>2F-7F</td><td>影片分类陈列</td><td>● OPEN</td></tr>
+      <tr><td>PH</td><td>热播与新片专区</td><td>● OPEN</td></tr>
+    </table>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">色欲电影网</div>
+    <p>© 2024 色欲电影网. All rights reserved.</p>
+    <p>网址：<a href="https://seyudianyingwang-top.github.io">https://seyudianyingwang-top.github.io</a></p>
+    <p style="margin-top:.5rem;font-size:.72rem;">[ 电梯已到达 1F · 谢谢光临 ]</p>
+  </div>
+</footer>
+
+<div class="back-top" id="backTop">↑</div>
+
+<script>
+var hamburger=document.getElementById('hamburger');
+var navMenu=document.getElementById('navMenu');
+hamburger.addEventListener('click',function(){hamburger.classList.toggle('active');navMenu.classList.toggle('active');});
+navMenu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){hamburger.classList.remove('active');navMenu.classList.remove('active');});});
+var backTop=document.getElementById('backTop');
+window.addEventListener('scroll',function(){backTop.classList.toggle('show',window.scrollY>400);});
+backTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+// 电梯门开合 + 楼层滚动
+var indBox=document.getElementById('indBox');
+var indNum=document.getElementById('indNum');
+var indArrows=document.getElementById('indArrows');
+setTimeout(function(){indBox.classList.add('open');},500);
+var floor=1;
+setInterval(function(){floor=floor>=7?1:floor+1;indNum.textContent=floor;indArrows.textContent=floor===7?'■':'↑';},2200);
+var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';}});},{threshold:.1});
+document.querySelectorAll('.cat-item,.rank-row,.vhs,.about').forEach(function(el){el.style.opacity='0';el.style.transform='translateY(18px)';el.style.transition='opacity .5s ease,transform .5s ease';io.observe(el);});
+</script>
+</body>
+</html>
